@@ -13,6 +13,8 @@ Before you begin, ensure you have the following installed:
 
 The project uses variables defined in `example.tfvars`. Before deploying, update this file with your specific configuration.
 
+The project also uses local variables defined in `locals.tf`. Before deploying, update this file with your specific configuration.
+
 ## Deployment Steps
 
 1. **Clone the Repository**:
@@ -23,24 +25,30 @@ The project uses variables defined in `example.tfvars`. Before deploying, update
 
 2. **Create an S3 bucket for the backend**:
     
-    Create an S3 bucket in your AWS account and update the bucket name in the backend.tf file.
+    Create an S3 bucket in your AWS account and update the bucket name in the `backend.tf` file.
 
-3. **Initialize Terraform**:
+3. **Update the configuration files**:
+
+    Please update the configuration files: `example.tfvars` and `locals.tf`.
+
+4. **Set AWS environment variables**
+
+5. **Initialize Terraform**:
     ```
     terraform init
     ```
 
-4. **Create a Terraform workspace**:
+6. **Create a Terraform workspace**:
     ```
     terraform workspace new <workspace-name>
     ```
 
-5. **Review the Terraform Plan**:
+7. **Review the Terraform Plan**:
     ```
     terraform plan -var-file="example.tfvars"
     ```
 
-6. **Apply the Configuration**:
+8. **Apply the Configuration**:
     ```
     terraform apply -var-file="example.tfvars"
     ```
