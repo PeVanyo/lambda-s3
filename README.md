@@ -73,7 +73,7 @@ This configuration will create the following resources:
 
 ## Clean Up
 
-1. **Empty the S3 bucket <s3_bucket_name>**
+1. **Empty the S3 bucket <s3_bucket_name>**.
 
 2. **Run**:
     ```
