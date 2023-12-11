@@ -59,17 +59,17 @@ This configuration will create the following resources:
 
 1. **Upload a file to S3**:
 
-Upload the sample.txt file into the lambda_bucket (s3). 
+    Upload the sample.txt file into the lambda_bucket (s3). 
 
 2. **Open the Log events**:
 
-Go to CloudWatch -> Log groups -> /aws/lambda/<lambda_function_name> -> Select the latest Log stream. 
+    Go to CloudWatch -> Log groups -> /aws/lambda/<lambda_function_name> -> Select the latest Log stream. 
 
-You should see logs like:
+    You should see logs like:
 
-    "Received event for bucket: ...";
-    "File retrieved and read successfully.";
-    "Word count: ...".
+        "Received event for bucket: ...";
+        "File retrieved and read successfully.";
+        "Word count: ...".
 
 ## Clean Up
 
