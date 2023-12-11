@@ -39,5 +39,3 @@ variable "lambda_layer_name" {
   description = "Name of the Lambda layer"
   type        = string
 }
-
-# Add more variables as needed
