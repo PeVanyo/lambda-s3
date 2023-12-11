@@ -22,6 +22,7 @@ The project uses variables defined in `example.tfvars`. Before deploying, update
    ```
 
 2. **Create an S3 bucket for the backend**:
+    
     Create an S3 bucket in your AWS account and update the s3_bucket_name in the example.tfvars file.
 
 3. **Initialize Terraform**:
@@ -60,11 +61,14 @@ This configuration will create the following resources:
 Upload the sample.txt file into the lambda_bucket (s3). 
 
 2. **Open the Log events**:
+
 Go to CloudWatch -> Log groups -> /aws/lambda/<lambda_function_name> -> Select the latest Log stream. 
+
 You should see logs like:
-"Received event for bucket: ...";
-"File retrieved and read successfully.";
-"Word count: ...".
+
+    "Received event for bucket: ...";
+    "File retrieved and read successfully.";
+    "Word count: ...".
 
 ## Clean Up
 
