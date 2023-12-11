@@ -1,0 +1,8 @@
+aws_region              = "eu-west-1"
+lambda_function_name    = "pv_lambda_function"
+s3_bucket_name          = "pv-px"
+lambda_runtime          = "python3.8"
+lambda_handler          = "lambda_function.lambda_handler"
+lambda_zip_path         = "./lambda_function.zip"
+lambda_layer_zip_path   = "./mylib_layer.zip"
+lambda_layer_name       = "pv_lambda_layer"
