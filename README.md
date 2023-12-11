@@ -23,7 +23,7 @@ The project uses variables defined in `example.tfvars`. Before deploying, update
 
 2. **Create an S3 bucket for the backend**:
     
-    Create an S3 bucket in your AWS account and update the s3_bucket_name in the example.tfvars file.
+    Create an S3 bucket in your AWS account and update the bucket name in the backend.tf file.
 
 3. **Initialize Terraform**:
     ```
