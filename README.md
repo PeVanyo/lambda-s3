@@ -58,6 +58,7 @@ This configuration will create the following resources:
 ## Test the Setup
 
 1. **Upload a file to S3**:
+
 Upload the sample.txt file into the lambda_bucket (s3). 
 
 2. **Open the Log events**:
